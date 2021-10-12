@@ -1,0 +1,35 @@
+00. What have you learned during this challenge? 
+
+I learned how the Floyd algorithm works and how to implement it in c. I strengthened my skills in working with memory and linked lists. I got acquainted with other algorithms for finding the shortest path.
+
+01. Where can you apply the knowledge gained during the challenge? Give examples from real life.
+Finding the shortest path is the most common task in transport logistics. This task is solved in any navigation system when choosing a route. True, a slightly complex algorithm is used there. For example, Google uses the Contraction hierarchies algorithm 
+
+02. Describe the algorithm that you used to find the shortest paths to the challenge.
+In computer science, the Floyd–Warshall algorithm (also known as Floyd's algorithm, the Roy–Warshall algorithm, the Roy–Floyd algorithm, or the WFI algorithm) is an algorithm for finding shortest paths in a directed weighted graph with positive or negative edge weights. A single execution of the algorithm will find the lengths (summed weights) of shortest paths between all pairs of vertices. Although it does not return details of the paths themselves, it is possible to reconstruct the paths with simple modifications to the algorithm. 
+
+03. Describe other possible algorithms to solve this problem.
+
+1. Depth-First Search (DFS)
+This is probably the simplest algorithm to get the shortest path. However, there are drawbacks too. Your graph needs to be a tree or polytree. If this condition is met, you can use a slightly modified DFS to find your shortest path. If there does not exist a path between startNode and stopNode, the shortest path will have a length of -1. We initialize the shortest path with this value and start a recursive DFS. That recursive DFS is slightly modified in the sense that it will track the depth of the search and stop as soon as it reaches stopNode. The current depth when it reaches stopNode is our shortest path length. This algorithm then has a time complexity of O(n).
+
+2. Dijkstra’s Algorithm
+This algorithm might be the most famous one for finding the shortest path. Its advantage over a DFS and bidirectional search is that you can use it in all graphs with positive edge weights. 
+We start by initializing the shortest path from our start node to every other node in our graph. Initially, this will be infinity for every node other than the start node itself. The start node will be initialized with 0 because that is the distance to itself. We insert all nodes to our priority queue along with their previously initialized distance to our start node as a priority.
+Now begins the actual work. Until the priority queue is not empty, we extract the node with the current shortest known distance to our start node. Let’s call it currentNode. Then we loop over all neighbors of currentNode, and for each one, we check if reaching it through currentNode is shorter than the currently known shortest path to that neighbor. If so, we update the shortest distance to the neighbor and proceed. Dijkstra’s algorithm will run in O(n²).
+
+3. Contraction hierarchies
+In computer science, the method of contraction hierarchies is a speed-up technique for finding the shortest-path in a graph. The most intuitive applications are car-navigation systems: a user wants to drive from {A} to { B} using the quickest possible route. The metric optimized here is the travel time. Intersections are represented by vertices, the road sections connecting them by edges. The edge weights represent the time it takes to drive along this segment of the road. A path from {A} to {B} is a sequence of edges (road sections); the shortest path is the one with the minimal sum of edge weights among all possible paths. Contraction hierarchies is a speed-up method optimized to exploit properties of graphs representing road networks.[2] The speed-up is achieved by creating shortcuts in a preprocessing phase which are then used during a shortest-path query to skip over "unimportant" vertices.This is based on the observation that road networks are highly hierarchical. Some intersections, for example highway junctions, are "more important" and higher up in the hierarchy than for example a junction leading into a dead end. Shortcuts can be used to save the precomputed distance between two important junctions such that the algorithm doesn't have to consider the full path between these junctions at query time. Contraction hierarchies do not know about which roads humans consider "important" (e.g. highways), but they are provided with the graph as input and are able to assign importance to vertices using heuristics.
+
+04. What approach of combinatorics math have you used in the solution?
+Rule of combination with repetitions 
+
+05. What part of the solution would you like to devote more time to?
+Would you like to change something?
+
+I would like to devote more time to reconstruction shortest paths. May be optimisation my code.
+
+06. It's very important to share your experience with the world!
+Open the challenge story, read the Share part and then provide links to your solution.
+
+https://github.com/vit-um/ucode/blob/main/Pathfinder/README.md
