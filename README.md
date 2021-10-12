@@ -6,4 +6,4 @@
 4. [Ucode Libmx](Libmx/README.md)
 5. [PathFinder](Pathfinder/README.md)
 6. [Ucode ls](Uls/README.md)
-7. [Ucode sh](Usl/README.md)
+7. [Ucode sh](Ush/README.md)
