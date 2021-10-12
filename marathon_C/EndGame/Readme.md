@@ -32,3 +32,7 @@ If you have reached your average score or even overdid it and got the `[WIN]` me
 Tetyana  Holdanova  
 Vitalii  Umanets  
 Max  Hrynchak  
+
+
+## [Go back](../README.md)
+
