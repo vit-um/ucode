@@ -9,6 +9,7 @@ $0 | file name
 $1 | first parameter
 ${!#} | last parameter
 ${10} | more than ninth operator numbers
+$# | number of parameters
 $* | all parameters as one word (example for loop step 1: for param in “$*” do  echo “$param”  ->  1 2 3 4 5)
 $@ | all parameters as each other word  (example for loop step 1: for param in “$@” do  echo “$param”  ->  1)
 "${@:$(($1+2))}" | rest parameters after $3
