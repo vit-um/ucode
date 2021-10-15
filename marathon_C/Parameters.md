@@ -17,4 +17,6 @@ Shift  | this command shift left all parameters (before: param == $3;  after:  p
 
 See more command line parameters and switches [here](https://habr.com/en/company/ruvds/blog/326328/)
 
+[*Comparison operators*](https://baks.dev/article/terminal/how-to-compare-strings-in-bash)
+
 ## [Go back](../README.md)
