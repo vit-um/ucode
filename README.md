@@ -1,4 +1,4 @@
-# Table of contents
+# Table of contents:
 0. [Sources of knowledge](BooksLinks.md) 
 1. [3D cube & pyramid on c](/marathon_C/3Dshapes.md)
 2. [Matrix rain (Ncurses)](/marathon_C/matrix_rain.md)
