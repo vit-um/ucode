@@ -7,3 +7,4 @@
 5. [PathFinder](Pathfinder/README.md)
 6. [Ucode ls](Uls/README.md)
 7. [Ucode sh](Ush/README.md)
+8. [Ucode chat](https://github.com/vit-um/uchat/blob/main/README.md)
