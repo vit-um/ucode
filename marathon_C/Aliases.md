@@ -14,7 +14,9 @@ alias clngd='clang -g3 -std=c11 -Wall -Wextra -Werror -Wpedantic -fsanitize=addr
 alias fnd='find -maxdepth 5 -name'  
 
 **for add use:**  
-`nano ~/.bashrc'  
+`nano ~/.bashrc`    
 `source ~/.bashrc`  
+
+
 
 ## [Go back](../README.md)
