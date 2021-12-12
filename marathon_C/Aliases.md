@@ -1,4 +1,4 @@
-##Usefull aliases
+# Usefull aliases
 
 alias ga='git add .'  
 alias gcm='git commit -m'  
@@ -16,3 +16,5 @@ alias fnd='find -maxdepth 5 -name'
 **for add use:**
 `nano ~/.bashrc'
 `source ~/.bashrc`
+
+## [Go back](../README.md)
